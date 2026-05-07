@@ -1,0 +1,89 @@
+/* Configurações de Layout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column; /* Força tudo a ficar um embaixo do outro */
+    align-items: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #1c1e21;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 1. Formulário em cima */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex; /* Campos lado a lado dentro do form */
+    gap: 10px;
+    margin-bottom: 30px; /* Espaço para a tabela não grudar */
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 2. Tabela embaixo */
+.table-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden; /* Para os cantos arredondados funcionarem */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+    color: #495057;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-delete {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+}
